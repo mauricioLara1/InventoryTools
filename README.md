@@ -17,6 +17,3 @@ ToolTracker es una aplicación Android desarrollada en Kotlin para gestionar inv
 - Room (SQLite)
 - Coroutines
 - LiveData y ViewModel
-
-## Estructura del proyecto
-
