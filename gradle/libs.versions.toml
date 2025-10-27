@@ -16,6 +16,9 @@ roomTesting = "2.8.2"
 composeCompiler = "1.5.15"
 room = "2.6.1"
 ksp = "2.0.21-1.0.25"
+#para navigation
+navigationCompose = "2.8.0"
+runtimeLivedata = "1.9.3"
 
 
 [libraries]
@@ -37,6 +40,10 @@ androidx-room-runtime = { group = "androidx.room", name = "room-runtime", versio
 androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "roomKtx" }
 androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "roomCompiler" }
 androidx-room-testing = { group = "androidx.room", name = "room-testing", version.ref = "roomTesting" }
+#para navigation
+navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
+androidx-compose-runtime-livedata = { group = "androidx.compose.runtime", name = "runtime-livedata", version.ref = "runtimeLivedata" }
+#para filtro teclado
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

@@ -5,6 +5,8 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+
+//imports para una migracion
 import androidx.room.migration.Migration
 import androidx.sqlite.db.SupportSQLiteDatabase
 
@@ -63,7 +65,7 @@ abstract class AppDatabase : RoomDatabase() {
 
         /**
          * Ejemplo de migración:
-         * 🔧 MIGRATION_1_2 agrega una nueva columna 'descripcion' a la tabla herramienta.
+         * MIGRATION_1_2 agrega una nueva columna 'descripcion' a la tabla herramienta.
          *
          * Esto evita que Room borre toda la base cuando se sube la versión.
          * Aquí simplemente se ejecuta un comando SQL para modificar la estructura.

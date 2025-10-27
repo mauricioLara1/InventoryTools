@@ -59,8 +59,9 @@ dependencies {
     // --- Room (Base de datos local) ---
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx)
-    ksp(libs.androidx.room.compiler)       // ✅ Correcto
-    testImplementation(libs.androidx.room.testing) // ✅ Mover aquí
+    implementation(libs.androidx.compose.runtime.livedata)
+    ksp(libs.androidx.room.compiler)
+    testImplementation(libs.androidx.room.testing)
 
     // --- Testing ---
     testImplementation(libs.junit)
@@ -70,6 +71,10 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
+
+    // --- navigation
+    implementation(libs.navigation.compose)
+
 }
 
 // ✅ Evita conflictos de anotaciones viejas
